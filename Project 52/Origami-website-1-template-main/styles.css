@@ -1,0 +1,60 @@
+.menu{
+    display: flex;
+    justify-content: space-between;
+    background-color:#000000;
+    padding: 15px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+}
+body{
+    margin: 0px;
+    /* modify background color here*/
+        background-image: linear-gradient(#4facfe 0%, #00f2fe 100%);
+}
+
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
+    font-family: sans-serif;
+    
+}
+.grid img{
+    border: 2px solid #000000;
+    border-radius: 50px;
+}
+.origami {
+    
+    border-radius: 20px;
+    background-color: #ffffff;
+    background-image: linear-gradient(grey, white);
+    /* box-shadow: 10px 10px 5px grey;
+    box-shadow: -10px -10px 5px grey; */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.38);    
+    /* modify margin and padding here*/
+    padding: 30px;
+    margin: 25px;
+    width:310px;
+    font-family: fantasy;
+    
+}
+
+.origami:hover {
+    transform: scale(1.15);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.38);
+    animation-name: growanimation;
+    animation-duration: 1s;
+    
+}
+
+a:visited{
+    color: #ffffff;
+}
+
+@keyframes growanimation{
+    from{transform: scale(1);}
+    to{transform: scale(1.15);}
+}
